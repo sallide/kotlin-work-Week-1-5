@@ -7,11 +7,6 @@ import kotlin.io.path.forEachLine
 import kotlin.io.path.writer
 
 
-//import kotlinx.datetime.Clock
-//import kotlinx.datetime.LocalDate
-//import kotlinx.datetime.TimeZone
-//import kotlinx.datetime.todayIn
-
 //import java.time.LocalDate
 
 class ToDoList() {
@@ -51,7 +46,7 @@ class ToDoList() {
                     val description = parts[2].trim()
 
                     items.add(ToDoItem(dueDate, status, description))
-                    //out.write("${item.dueDate},${item.status},${item.description}\n")
+                   
                 }
             }
     }

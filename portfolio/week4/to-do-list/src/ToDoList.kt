@@ -19,10 +19,11 @@ class ToDoList() {
     
     val overdue get() = items.count { 
         it.dueDate < LocalDate.parse("2026-10-05") && it.status != ItemStatus.Done
+        //it.dueDate < LocalDate.parse(java.time.LocalDate.now().toString()) && it.status != ItemStatus.Done}
+    
     }
     
-    //it.dueDate < LocalDate.parse(java.time.LocalDate.now().toString()) && it.status != ItemStatus.Done}
-    
+
        // compute no. of items with NotStarted status
        // compute no. of items with InProgress status
              // compute no. of items with Done status
